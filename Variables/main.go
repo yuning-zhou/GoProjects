@@ -3,11 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	// var i int = 62
+
+	// first way to declare a variable
+	var a int
+	a = 12
+
+	// second way
+
+	var b int = 62
 
 	// easier way to declare variable
-	i := 62
+	c := 31
 
-	fmt.Println(i)
+	fmt.Println(a, b, c)
 
 }
