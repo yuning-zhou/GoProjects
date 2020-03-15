@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
+
+var x int = 33
 
 func main() {
 
@@ -15,6 +20,15 @@ func main() {
 	// easier way to declare variable
 	c := 31
 
-	fmt.Println(a, b, c)
+	// innermost scope shadows the package level variable, so x will be 44
+	x = 44
+
+	// typecast string into int
+
+	var y string
+
+	y = strconv.Itoa(a)
+
+	fmt.Println(a, b, c, x, y)
 
 }
