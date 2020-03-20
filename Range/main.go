@@ -13,4 +13,11 @@ func main() {
 	for _, number := range numbers {
 		fmt.Printf("number: %d\n", number)
 	}
+
+	// adding numbers together
+	sum := 0
+	for _, number := range numbers {
+		sum += number
+	}
+	fmt.Println(sum)
 }
